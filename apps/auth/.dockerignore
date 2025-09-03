@@ -1,0 +1,61 @@
+# Default .dockerignore for NestJS Microservice
+Dockerfile
+.dockerignore
+
+# Node.js specific
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# NestJS build output
+dist
+build
+
+# Dependency directories (if using pnpm, etc.)
+.pnpm-store/
+
+# Testing
+coverage
+.nyc_output
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Optional (can be included if needed for build)
+# !.env.production  # Uncomment if you need to copy a production env file
