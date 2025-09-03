@@ -2,7 +2,7 @@ import { CreateUserDto, UpdateUserDto, User, PaginationDto, USERS_SERVICES_SERVI
 import { Inject, Injectable, Logger, OnModuleInit } from '@nestjs/common';
 import { ClientGrpc } from '@nestjs/microservices';
 import { Observable, ReplaySubject } from 'rxjs';
-import { FindOneUserDto } from '../../../../libs/common/src/types/auth';
+
 
 
 @Injectable()
