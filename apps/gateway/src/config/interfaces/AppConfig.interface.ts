@@ -1,12 +1,3 @@
-export interface DatabaseConfig {
-  type: string;
-  host: string;
-  port: number;
-  username: string;
-  password: string;
-  database: string;
-}
-
 export interface AppConfig {
   name: string;
   version: string;
@@ -15,4 +6,7 @@ export interface AppConfig {
   environment: string;
   globalPrefix: string;
   corsOrigin: string[];
+  grpc_service: string;
+  grpc_package: string;
+  grpc_proto_path: string;
 }

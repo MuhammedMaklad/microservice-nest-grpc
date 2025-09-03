@@ -10,10 +10,6 @@ export class AppConfigService {
     return this.configService.get<AppConfig>('app');
   }
 
-  // Database Configuration
-  get databaseConfig() {
-    return this.configService.get('database');
-  }
 
 
 }
