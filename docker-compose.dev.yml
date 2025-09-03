@@ -23,7 +23,7 @@ services:
       dockerfile: apps/auth/Dockerfile.dev
       target: development
     ports:
-      - ''
+      - '50051:50000'
     environment:
       - NODE_ENV=development
     volumes:

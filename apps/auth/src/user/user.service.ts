@@ -5,7 +5,15 @@ import { UpdateUserDto } from './dto/update-user.dto';
 @Injectable()
 export class UserService {
   create(createUserDto: CreateUserDto) {
-    return 'This action adds a new user';
+    const user = {
+      id: "1",
+      username: createUserDto.username,
+      password: createUserDto.password, // You should hash this in real app
+      age: createUserDto.age,
+      subscribed: false,
+      socialMedia: null
+    };
+    return user;
   }
 
   findAll() {
